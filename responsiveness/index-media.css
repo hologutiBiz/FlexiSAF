@@ -1,0 +1,183 @@
+    
+    /* Breakpoints */
+
+    @media screen and (max-width: 929px) {
+                
+        nav {
+            position: relative;
+        }
+        .hamburger,
+        .toggle-menu {
+            display: block;
+        }
+        .toggle-menu {
+            position: fixed;
+            right: 20%;
+        }
+        nav ul {
+            justify-content: start;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            top: -10px;
+            right: -200%;
+            width: 95%;
+            height: 100rem;
+            background-color: #fff;
+            padding-top: 20% ;
+            z-index: 1;
+            transition: 0.5s;
+        } 
+    }
+
+
+    @media screen and (max-width: 900px) {
+        body {
+            width: 100%;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            padding: 20px 0;
+        }
+
+        nav {
+            position: relative;
+        }
+        .hamburger,
+        .toggle-menu {
+            display: flex;
+        }
+        .toggle-menu {
+            position: fixed;
+            right: 10%;
+            width: 60px;
+        }
+     
+        .left-and-right-wrapper {
+            flex-direction: column; /* modified the "display" in the main css */
+        }
+        .left-text,
+        .right-text {
+            width: 100%;
+            margin: 2em 0;
+        }
+        .left-text p {
+            text-align: center;
+            line-height: 1.5;
+            font-weight: 400;
+            margin: 10px 0;
+            font-style: italic;
+            font-size: 2em;
+        }
+    }
+
+        /* 360px to 599px screensize */
+    @media screen and (max-width: 600px) {
+        body {
+            width: 100%;
+            background-attachment: fixed;  
+        }
+
+        main h1 {
+            width: 15ch;
+            margin: 2rem 1rem;
+            font-size: 2rem;
+        }   
+
+        .left-and-right-wrapper {
+            flex-direction: column; /* modified the "display" in the main css */
+        }
+        div.left-text,
+        div.right-text {
+            width: 100%;
+            margin: 2em 0;
+        }
+
+        .left-text p {
+            margin: 0.9em;
+            line-height: 1.7;
+            font-size: 19px;
+        }
+
+        #aside {
+            padding: 10px 0;
+            background-color: #000;
+        }
+    }
+
+
+
+            /* 320px screen size */
+@media screen and (max-width: 359px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+    }
+    main h1 {
+        text-align: center;
+        margin: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .left-and-right-wrapper {
+        flex-direction: column; /* modified the "display" in the main css */
+    }
+    main div.left-text,
+    main div.right-text {
+        width: 100%;
+        margin: 20px 0;
+    } 
+    
+    div.left-text p {
+        margin: 0.5em;
+        font-size: 18px;
+    }
+
+    div.right-text ul li {
+        margin: 20px 0;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    /* aside main css is inline */
+    #aside h3 {
+        margin: 1.5rem 0 !important;
+        width: 300px !important;
+    }
+    #aside div a {
+        display: block;
+    }  
+/* 
+    nav {
+        position: relative;
+    }
+    .hamburger,
+    .toggle-menu {
+        display: flex;
+    }
+    .toggle-menu {
+        position: fixed;
+        right: 20%;
+    }
+    nav ul {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: -10px;
+        right: -200%;
+        width: 95%;
+        height: 100rem;
+        background-color: #fff;
+        padding-top: 20% ;
+        z-index: 1;
+        transition: 0.5s;
+    } */
+}
